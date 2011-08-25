@@ -1,0 +1,6 @@
+[submodule "Alertas/LaunchAtLoginController"]
+	path = Alertas/LaunchAtLoginController
+	url = https://github.com/Mozketo/LaunchAtLoginController.git
+[submodule "Alertas/JSONKit"]
+	path = Alertas/JSONKit
+	url = https://github.com/johnezang/JSONKit.git

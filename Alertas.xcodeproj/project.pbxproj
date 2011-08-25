@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6204521613EDE4AF005AE625 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6204521513EDE4AF005AE625 /* Cocoa.framework */; };
+		6204522013EDE4AF005AE625 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6204521E13EDE4AF005AE625 /* InfoPlist.strings */; };
+		6204522213EDE4AF005AE625 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6204522113EDE4AF005AE625 /* main.m */; };
+		6204522613EDE4AF005AE625 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6204522413EDE4AF005AE625 /* Credits.rtf */; };
+		6204522913EDE4AF005AE625 /* AlertasAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6204522813EDE4AF005AE625 /* AlertasAppDelegate.m */; };
+		6204522C13EDE4AF005AE625 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6204522A13EDE4AF005AE625 /* MainMenu.xib */; };
+		6204523713EDEEDD005AE625 /* sireneHighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 6204523613EDEEDD005AE625 /* sireneHighlight.png */; };
+		6204523913EDEEE8005AE625 /* sirene.png in Resources */ = {isa = PBXBuildFile; fileRef = 6204523813EDEEE8005AE625 /* sirene.png */; };
+		6208267413EF0B80003F68B5 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6208267313EF0B80003F68B5 /* Sparkle.framework */; };
+		6208267613EF0BA8003F68B5 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6208267313EF0B80003F68B5 /* Sparkle.framework */; };
+		6208267913EF0D29003F68B5 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 6208267813EF0D29003F68B5 /* dsa_pub.pem */; };
+		62110A3213EE021F007873B3 /* alertas.icns in Resources */ = {isa = PBXBuildFile; fileRef = 62110A3113EE021F007873B3 /* alertas.icns */; };
+		62110A5913EE1846007873B3 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = 62110A5813EE1846007873B3 /* Growl Registration Ticket.growlRegDict */; };
+		62110A5B13EE1CAF007873B3 /* Growl-WithInstaller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62110A5A13EE1CAF007873B3 /* Growl-WithInstaller.framework */; };
+		62110A5C13EE1CBD007873B3 /* Growl-WithInstaller.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62110A5A13EE1CAF007873B3 /* Growl-WithInstaller.framework */; };
+		624C08001401BD6F0073A518 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624C07FF1401BD6F0073A518 /* SystemConfiguration.framework */; };
+		624C08031401CA2C0073A518 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 624C08021401CA2C0073A518 /* Reachability.m */; };
+		6269408913F76BB600E96E38 /* STAlertsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6269408813F76BB600E96E38 /* STAlertsController.m */; };
+		62CD1F2F1405780700CA53C9 /* STHttpPushController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CD1F2E1405780700CA53C9 /* STHttpPushController.m */; };
+		62E11D8A1406AEC5003BC636 /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E11D881406AEC5003BC636 /* LaunchAtLoginController.m */; };
+		62E11D8D1406AED1003BC636 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E11D8B1406AED1003BC636 /* JSONKit.m */; };
+		62F579BE1405AE32005AADE4 /* STGrowlNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F579BD1405AE32005AADE4 /* STGrowlNotificationController.m */; };
+		62F579EF1406937D005AADE4 /* sireneOffline.png in Resources */ = {isa = PBXBuildFile; fileRef = 62F579EE1406937D005AADE4 /* sireneOffline.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		62110A4613EE135C007873B3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				62110A5C13EE1CBD007873B3 /* Growl-WithInstaller.framework in CopyFiles */,
+				6208267613EF0BA8003F68B5 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6204521113EDE4AF005AE625 /* Alertas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alertas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6204521513EDE4AF005AE625 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6204521813EDE4AF005AE625 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		6204521913EDE4AF005AE625 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6204521A13EDE4AF005AE625 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6204521D13EDE4AF005AE625 /* Alertas-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Alertas-Info.plist"; sourceTree = "<group>"; };
+		6204521F13EDE4AF005AE625 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6204522113EDE4AF005AE625 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6204522313EDE4AF005AE625 /* Alertas-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Alertas-Prefix.pch"; sourceTree = "<group>"; };
+		6204522513EDE4AF005AE625 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		6204522713EDE4AF005AE625 /* AlertasAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertasAppDelegate.h; sourceTree = "<group>"; };
+		6204522813EDE4AF005AE625 /* AlertasAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertasAppDelegate.m; sourceTree = "<group>"; };
+		6204522B13EDE4AF005AE625 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6204523613EDEEDD005AE625 /* sireneHighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sireneHighlight.png; sourceTree = "<group>"; };
+		6204523813EDEEE8005AE625 /* sirene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sirene.png; sourceTree = "<group>"; };
+		6208267313EF0B80003F68B5 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		6208267813EF0D29003F68B5 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		62110A3113EE021F007873B3 /* alertas.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = alertas.icns; sourceTree = "<group>"; };
+		62110A5813EE1846007873B3 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = SOURCE_ROOT; };
+		62110A5A13EE1CAF007873B3 /* Growl-WithInstaller.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Growl-WithInstaller.framework"; sourceTree = "<group>"; };
+		624C07FF1401BD6F0073A518 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		624C08011401CA2C0073A518 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		624C08021401CA2C0073A518 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		6269408713F76BB600E96E38 /* STAlertsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAlertsController.h; sourceTree = "<group>"; };
+		6269408813F76BB600E96E38 /* STAlertsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAlertsController.m; sourceTree = "<group>"; };
+		62CD1F2D1405780700CA53C9 /* STHttpPushController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHttpPushController.h; sourceTree = "<group>"; };
+		62CD1F2E1405780700CA53C9 /* STHttpPushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHttpPushController.m; sourceTree = "<group>"; };
+		62E11D881406AEC5003BC636 /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LaunchAtLoginController.m; path = LaunchAtLoginController/LaunchAtLoginController.m; sourceTree = "<group>"; };
+		62E11D891406AEC5003BC636 /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LaunchAtLoginController.h; path = LaunchAtLoginController/LaunchAtLoginController.h; sourceTree = "<group>"; };
+		62E11D8B1406AED1003BC636 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = JSONKit/JSONKit.m; sourceTree = "<group>"; };
+		62E11D8C1406AED1003BC636 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = JSONKit/JSONKit.h; sourceTree = "<group>"; };
+		62F579BC1405AE32005AADE4 /* STGrowlNotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGrowlNotificationController.h; sourceTree = "<group>"; };
+		62F579BD1405AE32005AADE4 /* STGrowlNotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGrowlNotificationController.m; sourceTree = "<group>"; };
+		62F579EE1406937D005AADE4 /* sireneOffline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sireneOffline.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6204520E13EDE4AF005AE625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624C08001401BD6F0073A518 /* SystemConfiguration.framework in Frameworks */,
+				6204521613EDE4AF005AE625 /* Cocoa.framework in Frameworks */,
+				62110A5B13EE1CAF007873B3 /* Growl-WithInstaller.framework in Frameworks */,
+				6208267413EF0B80003F68B5 /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6204520613EDE4AF005AE625 = {
+			isa = PBXGroup;
+			children = (
+				62110A3113EE021F007873B3 /* alertas.icns */,
+				6204521B13EDE4AF005AE625 /* Alertas */,
+				6204521413EDE4AF005AE625 /* Frameworks */,
+				6204521213EDE4AF005AE625 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6204521213EDE4AF005AE625 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6204521113EDE4AF005AE625 /* Alertas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6204521413EDE4AF005AE625 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				624C07FF1401BD6F0073A518 /* SystemConfiguration.framework */,
+				6208267313EF0B80003F68B5 /* Sparkle.framework */,
+				62110A5A13EE1CAF007873B3 /* Growl-WithInstaller.framework */,
+				6204521513EDE4AF005AE625 /* Cocoa.framework */,
+				6204521713EDE4AF005AE625 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6204521713EDE4AF005AE625 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6204521813EDE4AF005AE625 /* AppKit.framework */,
+				6204521913EDE4AF005AE625 /* CoreData.framework */,
+				6204521A13EDE4AF005AE625 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		6204521B13EDE4AF005AE625 /* Alertas */ = {
+			isa = PBXGroup;
+			children = (
+				62F6006013FC441D00E29E8B /* Controller */,
+				62F6005E13FC440E00E29E8B /* External */,
+				62F6006213FC444600E29E8B /* Delegate */,
+				62F6006313FC445C00E29E8B /* Views */,
+				6204521C13EDE4AF005AE625 /* Supporting Files */,
+			);
+			path = Alertas;
+			sourceTree = "<group>";
+		};
+		6204521C13EDE4AF005AE625 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6208267813EF0D29003F68B5 /* dsa_pub.pem */,
+				62110A5813EE1846007873B3 /* Growl Registration Ticket.growlRegDict */,
+				6204523813EDEEE8005AE625 /* sirene.png */,
+				6204523613EDEEDD005AE625 /* sireneHighlight.png */,
+				62F579EE1406937D005AADE4 /* sireneOffline.png */,
+				6204521D13EDE4AF005AE625 /* Alertas-Info.plist */,
+				6204521E13EDE4AF005AE625 /* InfoPlist.strings */,
+				6204522113EDE4AF005AE625 /* main.m */,
+				6204522313EDE4AF005AE625 /* Alertas-Prefix.pch */,
+				6204522413EDE4AF005AE625 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62F6005E13FC440E00E29E8B /* External */ = {
+			isa = PBXGroup;
+			children = (
+				62E11D8B1406AED1003BC636 /* JSONKit.m */,
+				62E11D8C1406AED1003BC636 /* JSONKit.h */,
+				62E11D881406AEC5003BC636 /* LaunchAtLoginController.m */,
+				62E11D891406AEC5003BC636 /* LaunchAtLoginController.h */,
+				624C08011401CA2C0073A518 /* Reachability.h */,
+				624C08021401CA2C0073A518 /* Reachability.m */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		62F6006013FC441D00E29E8B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				62CD1F2D1405780700CA53C9 /* STHttpPushController.h */,
+				62CD1F2E1405780700CA53C9 /* STHttpPushController.m */,
+				6269408713F76BB600E96E38 /* STAlertsController.h */,
+				6269408813F76BB600E96E38 /* STAlertsController.m */,
+				62F579BC1405AE32005AADE4 /* STGrowlNotificationController.h */,
+				62F579BD1405AE32005AADE4 /* STGrowlNotificationController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		62F6006213FC444600E29E8B /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6204522713EDE4AF005AE625 /* AlertasAppDelegate.h */,
+				6204522813EDE4AF005AE625 /* AlertasAppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		62F6006313FC445C00E29E8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6204522A13EDE4AF005AE625 /* MainMenu.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6204521013EDE4AF005AE625 /* Alertas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6204522F13EDE4AF005AE625 /* Build configuration list for PBXNativeTarget "Alertas" */;
+			buildPhases = (
+				6204520D13EDE4AF005AE625 /* Sources */,
+				6204520E13EDE4AF005AE625 /* Frameworks */,
+				6204520F13EDE4AF005AE625 /* Resources */,
+				62110A4613EE135C007873B3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alertas;
+			productName = Alertas;
+			productReference = 6204521113EDE4AF005AE625 /* Alertas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6204520813EDE4AF005AE625 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+				ORGANIZATIONNAME = "System Tech LDA";
+			};
+			buildConfigurationList = 6204520B13EDE4AF005AE625 /* Build configuration list for PBXProject "Alertas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6204520613EDE4AF005AE625;
+			productRefGroup = 6204521213EDE4AF005AE625 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6204521013EDE4AF005AE625 /* Alertas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6204520F13EDE4AF005AE625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6204522013EDE4AF005AE625 /* InfoPlist.strings in Resources */,
+				6204522613EDE4AF005AE625 /* Credits.rtf in Resources */,
+				6204522C13EDE4AF005AE625 /* MainMenu.xib in Resources */,
+				6204523713EDEEDD005AE625 /* sireneHighlight.png in Resources */,
+				6204523913EDEEE8005AE625 /* sirene.png in Resources */,
+				62110A3213EE021F007873B3 /* alertas.icns in Resources */,
+				62110A5913EE1846007873B3 /* Growl Registration Ticket.growlRegDict in Resources */,
+				6208267913EF0D29003F68B5 /* dsa_pub.pem in Resources */,
+				62F579EF1406937D005AADE4 /* sireneOffline.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6204520D13EDE4AF005AE625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6204522213EDE4AF005AE625 /* main.m in Sources */,
+				6204522913EDE4AF005AE625 /* AlertasAppDelegate.m in Sources */,
+				6269408913F76BB600E96E38 /* STAlertsController.m in Sources */,
+				624C08031401CA2C0073A518 /* Reachability.m in Sources */,
+				62CD1F2F1405780700CA53C9 /* STHttpPushController.m in Sources */,
+				62F579BE1405AE32005AADE4 /* STGrowlNotificationController.m in Sources */,
+				62E11D8A1406AEC5003BC636 /* LaunchAtLoginController.m in Sources */,
+				62E11D8D1406AED1003BC636 /* JSONKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6204521E13EDE4AF005AE625 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6204521F13EDE4AF005AE625 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6204522413EDE4AF005AE625 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6204522513EDE4AF005AE625 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		6204522A13EDE4AF005AE625 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6204522B13EDE4AF005AE625 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6204522D13EDE4AF005AE625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		6204522E13EDE4AF005AE625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		6204523013EDE4AF005AE625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Alertas/Alertas-Prefix.pch";
+				INFOPLIST_FILE = "Alertas/Alertas-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6204523113EDE4AF005AE625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Alertas/Alertas-Prefix.pch";
+				INFOPLIST_FILE = "Alertas/Alertas-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6204520B13EDE4AF005AE625 /* Build configuration list for PBXProject "Alertas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6204522D13EDE4AF005AE625 /* Debug */,
+				6204522E13EDE4AF005AE625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6204522F13EDE4AF005AE625 /* Build configuration list for PBXNativeTarget "Alertas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6204523013EDE4AF005AE625 /* Debug */,
+				6204523113EDE4AF005AE625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6204520813EDE4AF005AE625 /* Project object */;
+}
