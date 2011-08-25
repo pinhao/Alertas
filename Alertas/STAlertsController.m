@@ -216,7 +216,7 @@
     NSLog(@"Connection failed! Error - %@ %@",
           [error localizedDescription],
           [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
-    [self updateMenuWithString:error.localizedDescription];
+    [self updateMenuWithString:[error localizedDescription]];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection 

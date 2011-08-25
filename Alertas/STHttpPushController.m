@@ -69,7 +69,7 @@
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
-    [statusItem setTitle:@"Listening..."];
+    [statusItem setTitle:@"Listening for notifications..."];
     NSLog(@"Listening...");
 }
 

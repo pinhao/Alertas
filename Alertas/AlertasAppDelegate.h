@@ -12,6 +12,7 @@
 #import "LaunchAtLoginController.h"
 #import "STAlertsController.h"
 #import "STHttpPushController.h"
+#import "STFireRiskController.h"
 
 @interface AlertasAppDelegate : NSObject <GrowlApplicationBridgeDelegate> {
     NSStatusItem *statusItem;
@@ -22,6 +23,7 @@
     LaunchAtLoginController *launchAtLoginController;
     STAlertsController *alertsController;
     STHttpPushController *httpPushController;
+    STFireRiskController *fireRiskController;
     
     IBOutlet NSMenuItem *openAtLoginOutlet;
     IBOutlet NSMenuItem *bottomSeparatorOutlet;
@@ -29,6 +31,7 @@
     IBOutlet NSMenu *menuOutlet;
     IBOutlet NSMenuItem *updateAlertsOutlet;
     IBOutlet NSMenuItem *pushStatusOutlet;
+    IBOutlet NSMenuItem *fireRiskOutlet;
     IBOutlet SUUpdater *sparkleOutlet;
 }
 

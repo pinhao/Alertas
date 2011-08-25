@@ -63,6 +63,8 @@
     [alertsController addObserver:self forKeyPath:@"alerts" options:NSKeyValueObservingOptionNew context:nil];
     
     httpPushController = [[STHttpPushController alloc] initWithURL:[NSURL URLWithString:@"http://api.notify.io/v1/listen/e25eff0f8046f8d508a98d0244cddf5889d56151"] statusItem:pushStatusOutlet];
+
+    fireRiskController = [[STFireRiskController alloc] initWithFireRiskURL:[NSURL URLWithString:@"http://www.meteo.pt/resources.www/transf/indices/rcm_conc.jpg"] menuItem:fireRiskOutlet];
 }
 
 - (void)dealloc {
@@ -75,6 +77,8 @@
     [statusHighlightImage release];
     [statusOfflineImage release];
     [launchAtLoginController release];
+    [httpPushController release];
+    [fireRiskController release];
     [super dealloc];
 }
 

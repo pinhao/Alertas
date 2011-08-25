@@ -28,6 +28,7 @@
 		62CD1F2F1405780700CA53C9 /* STHttpPushController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CD1F2E1405780700CA53C9 /* STHttpPushController.m */; };
 		62E11D8A1406AEC5003BC636 /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E11D881406AEC5003BC636 /* LaunchAtLoginController.m */; };
 		62E11D8D1406AED1003BC636 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E11D8B1406AED1003BC636 /* JSONKit.m */; };
+		62E11D901406D0A0003BC636 /* STFireRiskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E11D8F1406D0A0003BC636 /* STFireRiskController.m */; };
 		62F579BE1405AE32005AADE4 /* STGrowlNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F579BD1405AE32005AADE4 /* STGrowlNotificationController.m */; };
 		62F579EF1406937D005AADE4 /* sireneOffline.png in Resources */ = {isa = PBXBuildFile; fileRef = 62F579EE1406937D005AADE4 /* sireneOffline.png */; };
 /* End PBXBuildFile section */
@@ -78,6 +79,8 @@
 		62E11D891406AEC5003BC636 /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LaunchAtLoginController.h; path = LaunchAtLoginController/LaunchAtLoginController.h; sourceTree = "<group>"; };
 		62E11D8B1406AED1003BC636 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = JSONKit/JSONKit.m; sourceTree = "<group>"; };
 		62E11D8C1406AED1003BC636 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = JSONKit/JSONKit.h; sourceTree = "<group>"; };
+		62E11D8E1406D0A0003BC636 /* STFireRiskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFireRiskController.h; sourceTree = "<group>"; };
+		62E11D8F1406D0A0003BC636 /* STFireRiskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFireRiskController.m; sourceTree = "<group>"; };
 		62F579BC1405AE32005AADE4 /* STGrowlNotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGrowlNotificationController.h; sourceTree = "<group>"; };
 		62F579BD1405AE32005AADE4 /* STGrowlNotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGrowlNotificationController.m; sourceTree = "<group>"; };
 		62F579EE1406937D005AADE4 /* sireneOffline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sireneOffline.png; sourceTree = "<group>"; };
@@ -189,6 +192,8 @@
 				6269408813F76BB600E96E38 /* STAlertsController.m */,
 				62F579BC1405AE32005AADE4 /* STGrowlNotificationController.h */,
 				62F579BD1405AE32005AADE4 /* STGrowlNotificationController.m */,
+				62E11D8E1406D0A0003BC636 /* STFireRiskController.h */,
+				62E11D8F1406D0A0003BC636 /* STFireRiskController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 				62F579BE1405AE32005AADE4 /* STGrowlNotificationController.m in Sources */,
 				62E11D8A1406AEC5003BC636 /* LaunchAtLoginController.m in Sources */,
 				62E11D8D1406AED1003BC636 /* JSONKit.m in Sources */,
+				62E11D901406D0A0003BC636 /* STFireRiskController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

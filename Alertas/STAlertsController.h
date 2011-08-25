@@ -14,9 +14,9 @@
 @interface STAlertsController : NSObject <NSConnectionDelegate> {
     NSArray *alerts;
     NSMutableData *receivedData;
-    NSTimer *updateTimer;
     NSURLRequest *urlRequest;
     NSURLConnection *urlConnection;
+    NSTimer *updateTimer;
     NSInteger updateInterval;
     NSMenuItem *topSeparator;
     NSMenuItem *bottomSeparator;
