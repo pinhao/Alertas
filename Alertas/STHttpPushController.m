@@ -100,7 +100,6 @@
     string = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     if (![string hasPrefix:@"{"] || ![string hasSuffix:@"}"])
         return;
-    NSLog(@"data: %@", string);
     NSDictionary *payload = [string objectFromJSONString];
     [[NSNotificationCenter defaultCenter] postNotificationName:kHttpPushNotification object:self userInfo:payload];
     

@@ -34,7 +34,7 @@
         BOOL isSilent = ([tags rangeOfString:@"silentUpdate"].location != NSNotFound);
         BOOL isSticky = (isStickyNotificationsEnabled || [tags rangeOfString:@"sticky"].location != NSNotFound);
         
-        if ( isSilent ) {
+        if ( !isSilent ) {
             [GrowlApplicationBridge notifyWithTitle:[payload objectForKey:@"title"] 
                                         description:[payload objectForKey:@"text"] 
                                    notificationName:@"Alertas" 

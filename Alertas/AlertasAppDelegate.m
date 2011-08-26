@@ -88,8 +88,12 @@
         if ( [alertsController isOffline] ) {
             [statusItem setTitle:@""];
             [statusItem setImage:statusOfflineImage];
+            [statusItem setAlternateImage:statusHighlightImage];
+            [statusItem setHighlightMode:YES];
         } else {
             [statusItem setImage:statusImage];
+            [statusItem setAlternateImage:statusHighlightImage];
+            [statusItem setHighlightMode:YES];
         }
     } else if ( [keyPath isEqualTo:@"alerts"] ) {
         NSNumber * closedCount = [[alertsController alerts] valueForKeyPath:@"@sum.fechado"];
