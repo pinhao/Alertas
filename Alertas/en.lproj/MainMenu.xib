@@ -12,6 +12,7 @@
 		</object>
 		<object class="NSArray" key="IBDocument.IntegratedClassDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<string>NSUserDefaultsController</string>
 			<string>NSMenu</string>
 			<string>NSMenuItem</string>
 			<string>NSCustomObject</string>
@@ -93,7 +94,7 @@
 						<reference key="NSOnImage" ref="993164655"/>
 						<reference key="NSMixedImage" ref="390463395"/>
 					</object>
-					<object class="NSMenuItem" id="669667417">
+					<object class="NSMenuItem" id="91812595">
 						<reference key="NSMenu" ref="1005044171"/>
 						<bool key="NSIsDisabled">YES</bool>
 						<bool key="NSIsSeparator">YES</bool>
@@ -103,7 +104,7 @@
 						<reference key="NSOnImage" ref="993164655"/>
 						<reference key="NSMixedImage" ref="390463395"/>
 					</object>
-					<object class="NSMenuItem" id="53812803">
+					<object class="NSMenuItem" id="331036468">
 						<reference key="NSMenu" ref="1005044171"/>
 						<string key="NSTitle"/>
 						<string key="NSKeyEquiv"/>
@@ -198,6 +199,9 @@
 					</object>
 				</object>
 				<bool key="NSNoAutoenable">YES</bool>
+			</object>
+			<object class="NSUserDefaultsController" id="650685749">
+				<bool key="NSSharedInstance">YES</bool>
 			</object>
 		</object>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -327,9 +331,71 @@
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">fireRiskOutlet</string>
 						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="53812803"/>
+						<reference key="destination" ref="331036468"/>
 					</object>
 					<int key="connectionID">842</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: values.soundNotifications</string>
+						<reference key="source" ref="979404716"/>
+						<reference key="destination" ref="650685749"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="979404716"/>
+							<reference key="NSDestination" ref="650685749"/>
+							<string key="NSLabel">value: values.soundNotifications</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">values.soundNotifications</string>
+							<object class="NSDictionary" key="NSOptions">
+								<bool key="EncodedWithXMLCoder">YES</bool>
+								<object class="NSArray" key="dict.sortedKeys">
+									<bool key="EncodedWithXMLCoder">YES</bool>
+									<string>NSAllowsEditingMultipleValuesSelection</string>
+									<string>NSConditionallySetsEnabled</string>
+									<string>NSRaisesForNotApplicableKeys</string>
+								</object>
+								<object class="NSMutableArray" key="dict.values">
+									<bool key="EncodedWithXMLCoder">YES</bool>
+									<boolean value="NO"/>
+									<boolean value="NO"/>
+									<boolean value="NO"/>
+								</object>
+							</object>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">850</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: values.stickyNotifications</string>
+						<reference key="source" ref="99291046"/>
+						<reference key="destination" ref="650685749"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="99291046"/>
+							<reference key="NSDestination" ref="650685749"/>
+							<string key="NSLabel">value: values.stickyNotifications</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">values.stickyNotifications</string>
+							<object class="NSDictionary" key="NSOptions">
+								<bool key="EncodedWithXMLCoder">YES</bool>
+								<object class="NSArray" key="dict.sortedKeys">
+									<bool key="EncodedWithXMLCoder">YES</bool>
+									<string>NSAllowsEditingMultipleValuesSelection</string>
+									<string>NSConditionallySetsEnabled</string>
+									<string>NSRaisesForNotApplicableKeys</string>
+								</object>
+								<object class="NSMutableArray" key="dict.values">
+									<bool key="EncodedWithXMLCoder">YES</bool>
+									<boolean value="NO"/>
+									<boolean value="NO"/>
+									<boolean value="NO"/>
+								</object>
+							</object>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">855</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -379,8 +445,8 @@
 							<reference ref="549868313"/>
 							<reference ref="978429769"/>
 							<reference ref="47142639"/>
-							<reference ref="53812803"/>
-							<reference ref="669667417"/>
+							<reference ref="331036468"/>
+							<reference ref="91812595"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -476,13 +542,18 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">840</int>
-						<reference key="object" ref="669667417"/>
+						<reference key="object" ref="91812595"/>
 						<reference key="parent" ref="1005044171"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">841</int>
-						<reference key="object" ref="53812803"/>
+						<reference key="object" ref="331036468"/>
 						<reference key="parent" ref="1005044171"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">843</int>
+						<reference key="object" ref="650685749"/>
+						<reference key="parent" ref="0"/>
 					</object>
 				</object>
 			</object>
@@ -514,6 +585,7 @@
 					<string>839.IBPluginDependency</string>
 					<string>840.IBPluginDependency</string>
 					<string>841.IBPluginDependency</string>
+					<string>843.IBPluginDependency</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -525,6 +597,7 @@
 						<reference key="dict.sortedKeys" ref="0"/>
 						<reference key="dict.values" ref="0"/>
 					</object>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -559,7 +632,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">842</int>
+			<int key="maxID">855</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
