@@ -31,8 +31,8 @@
         NSDictionary *payload = [notification userInfo];
         
         NSString *tags = [payload objectForKey:@"tags"]; 
-        BOOL isSilent = ([tags rangeOfString:@"silentUpdate"].location != NSNotFound);
-        BOOL isSticky = (isStickyNotificationsEnabled || [tags rangeOfString:@"sticky"].location != NSNotFound);
+        BOOL isSilent = (tags && [tags rangeOfString:@"silentUpdate"].location != NSNotFound);
+        BOOL isSticky = (isStickyNotificationsEnabled || (tags && [tags rangeOfString:@"sticky"].location != NSNotFound));
         
         if ( !isSilent ) {
             [GrowlApplicationBridge notifyWithTitle:[payload objectForKey:@"title"] 

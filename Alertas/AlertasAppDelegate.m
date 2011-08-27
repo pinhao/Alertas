@@ -110,7 +110,7 @@
     if ( [[notification name] isEqualToString:kHttpPushNotification] && ![[notification userInfo] isEqualTo:nil]) {
         NSDictionary *payload = [notification userInfo];
         NSString *tags = [payload objectForKey:@"tags"]; 
-        BOOL isUpdate = ([tags rangeOfString:@"softwareUpdate"].location != NSNotFound);
+        BOOL isUpdate = (tags && [tags rangeOfString:@"softwareUpdate"].location != NSNotFound);
         if ( isUpdate )
         {
             NSLog(@"Checking for updates in background...");
