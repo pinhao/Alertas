@@ -73,6 +73,7 @@
 		624C08021401CA2C0073A518 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		6269408713F76BB600E96E38 /* STAlertsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAlertsController.h; sourceTree = "<group>"; };
 		6269408813F76BB600E96E38 /* STAlertsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAlertsController.m; sourceTree = "<group>"; };
+		62768FAE1454987600607B92 /* Shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shared.h; sourceTree = "<group>"; };
 		62CD1F2D1405780700CA53C9 /* STHttpPushController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHttpPushController.h; sourceTree = "<group>"; };
 		62CD1F2E1405780700CA53C9 /* STHttpPushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHttpPushController.m; sourceTree = "<group>"; };
 		62E11D881406AEC5003BC636 /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LaunchAtLoginController.m; path = LaunchAtLoginController/LaunchAtLoginController.m; sourceTree = "<group>"; };
@@ -166,6 +167,7 @@
 				6204522113EDE4AF005AE625 /* main.m */,
 				6204522313EDE4AF005AE625 /* Alertas-Prefix.pch */,
 				6204522413EDE4AF005AE625 /* Credits.rtf */,
+				62768FAE1454987600607B92 /* Shared.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

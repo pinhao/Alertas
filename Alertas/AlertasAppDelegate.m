@@ -28,7 +28,7 @@
         [GrowlApplicationBridge setGrowlDelegate:nil];
 	}
 	else{
-		NSLog(@"Could not load Growl.framework");
+		DLog(@"Could not load Growl.framework");
 	}
     
     /** SPARKLE **/
@@ -62,7 +62,7 @@
     [alertsController addObserver:self forKeyPath:@"isOffline" options:NSKeyValueObservingOptionNew context:nil];
     [alertsController addObserver:self forKeyPath:@"alerts" options:NSKeyValueObservingOptionNew context:nil];
     
-    httpPushController = [[STHttpPushController alloc] initWithURL:[NSURL URLWithString:@"http://api.notify.io/v1/listen/e25eff0f8046f8d508a98d0244cddf5889d56151"] statusItem:pushStatusOutlet];
+    httpPushController = [[STHttpPushController alloc] initWithURL:[NSURL URLWithString:@"http://bvcanas.com/push.php"] statusItem:pushStatusOutlet];
 
     fireRiskController = [[STFireRiskController alloc] initWithFireRiskURL:[NSURL URLWithString:@"http://www.meteo.pt/resources.www/transf/indices/rcm_conc.jpg"] menuItem:fireRiskOutlet];
 }
@@ -113,7 +113,7 @@
         BOOL isUpdate = (tags && [tags rangeOfString:@"softwareUpdate"].location != NSNotFound);
         if ( isUpdate )
         {
-            NSLog(@"Checking for updates in background...");
+            DLog(@"Checking for updates in background...");
             [sparkleOutlet checkForUpdatesInBackground];
         }
     }

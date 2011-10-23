@@ -38,16 +38,17 @@
 
 - (void)makeConnection:(NSTimeInterval)delay {
     [self performSelector:@selector(makeConnection) withObject:nil afterDelay:delay];
-	NSLog(@"trying to connect in: %f", delay);
+	DLog(@"trying to connect in: %f", delay);
 }
 
 - (void)makeConnection {
 	if(notifyConn){
+        DLog(@"release notify connection");
 		[notifyConn release];
 	}
 	notifyConn = [[NSURLConnection alloc] initWithRequest:notifyReq delegate:self startImmediately:YES];
     [statusItem setTitle:@"Connecting..."];
-	NSLog(@"connecting: %@", notifyConn);	    
+	DLog(@"connecting: %@", notifyConn);	    
 }
 
 -(NSURLRequest *)connection:(NSURLConnection*)connection willSendRequest:(NSURLRequest*)request redirectResponse:(NSHTTPURLResponse*)redirectResponse {
@@ -56,7 +57,7 @@
 			if ( [@"location" caseInsensitiveCompare:key] == NSOrderedSame ) {
 				NSURL *url = [NSURL URLWithString:[[redirectResponse allHeaderFields] objectForKey:key]];
                 [statusItem setTitle:@"Redirecting..."];
-                NSLog(@"redirecting to %@", url);
+                DLog(@"redirecting to %@", url);
 				[notifyReq setURL: url];
 				return notifyReq;
 			}
@@ -70,16 +71,16 @@
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
     [statusItem setTitle:@"Listening for notifications..."];
-    NSLog(@"Listening...");
+    DLog(@"Listening...");
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    NSLog(@"connection finished");
+    DLog(@"connection finished");
     [self makeConnection];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-    NSLog(@"did fail with error: %@", error);
+    DLog(@"did fail with error: %@", error);
     // if hostname not found or net connection offline, try again after delay
     switch ([error code]) {
         case NSURLErrorUnsupportedURL:
@@ -96,13 +97,13 @@
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {		
+    DLog(@"didReceiveData:");
     NSString *string = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
     string = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     if (![string hasPrefix:@"{"] || ![string hasSuffix:@"}"])
         return;
     NSDictionary *payload = [string objectFromJSONString];
     [[NSNotificationCenter defaultCenter] postNotificationName:kHttpPushNotification object:self userInfo:payload];
-    
 }
 
 - (void)networkStatusNotification:(NSNotification *)notification
@@ -120,10 +121,10 @@
             notifyConn = nil;
         }
         [statusItem setTitle:@"The Internet connection appears to be offline."];
-        NSLog(@"HttpPush host Offline");
+        DLog(@"HttpPush host Offline");
     } else {
         [self makeConnection];
-        NSLog(@"HttpPush host Online");
+        DLog(@"HttpPush host Online");
     }
 }
 

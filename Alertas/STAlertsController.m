@@ -118,13 +118,13 @@
         }
         [self updateMenuWithString:@"The Internet connection appears to be offline."];
         [self offline:YES];
-        NSLog(@"API host Offline");
+        DLog(@"API host Offline");
     } else {
         [self updateMenuWithString:@"Starting up..."];
         [self makeUpdateRequest];
         [self setupUpdateTimer];
         [self offline:NO];
-        NSLog(@"API host Online");
+        DLog(@"API host Online");
     }
 }
 
@@ -213,7 +213,7 @@
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error 
 {
-    NSLog(@"Connection failed! Error - %@ %@",
+    DLog(@"Connection failed! Error - %@ %@",
           [error localizedDescription],
           [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
     [self updateMenuWithString:[error localizedDescription]];
@@ -221,7 +221,7 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection 
 {
-    NSLog(@"Connection finished!");
+    DLog(@"Connection finished");
     NSString *JSONString = [[[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding] autorelease];
     JSONString = [JSONString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     if (![JSONString hasPrefix:@"["] || ![JSONString hasSuffix:@"]"])
